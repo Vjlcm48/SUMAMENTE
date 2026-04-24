@@ -1,20 +1,20 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("org.jetbrains.kotlin.plugin.compose") version "2.3.20"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.3.21"
     alias(libs.plugins.google.services)
     alias(libs.plugins.firebase.crashlytics)
 }
 
 android {
     namespace = "com.heptacreation.sumamente"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.heptacreation.sumamente"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 19
-        versionName = "1.1"
+        targetSdk = 37
+        versionCode = 21
+        versionName = "2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -25,6 +25,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

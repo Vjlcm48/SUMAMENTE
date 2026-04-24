@@ -134,14 +134,12 @@ class GameActivityFocoPlusAvanzado : BaseActivity() {
     }
     private var hiddenMetaIndexForFg: Int = -1
 
-
     private val validMultiplicationTargets = listOf(
         8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28,
         30, 32, 33, 34, 35, 36, 38, 39, 40, 42, 44, 45, 46, 48, 49, 50,
         51, 52, 54, 55, 56, 57, 58, 60, 62, 63, 64, 65, 66, 68, 69, 70,
         72, 78, 80
     )
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
